@@ -1,3 +1,5 @@
+use std::fmt::{self, Formatter};
+
 pub fn formatted() {
     // In general, the `{}` will be automatically replaced with any
     // arguments. These will be stringified.
@@ -45,6 +47,12 @@ pub fn formatted() {
 
     #[allow(dead_code)]
     struct Structure(i32);
+
+    impl std::fmt::Display for Structure {
+        fn fmt(&self,f: &mut Formatter<'_>) -> fmt::Result {
+            write!(f, "{}", self.0)
+        }
+    }
 
     // This will not compile because `Structure` does not implement
     // fmt::Display
