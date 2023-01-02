@@ -1,5 +1,6 @@
 //mod formatted_print;
 //mod debug_print;
+mod display;
 
 fn main() {
     //println!("Hello, world!");
@@ -7,4 +8,5 @@ fn main() {
 
     //formatted_print::formatted();
     //debug_print::debug_print();
+    display::display_rust();
 }
