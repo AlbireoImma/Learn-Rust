@@ -1,7 +1,8 @@
 //mod formatted_print;
 //mod debug_print;
 //mod display;
-mod testcase_list;
+//mod testcase_list;
+mod structures;
 
 fn main() {
     //Chapter 1: Hello World
@@ -12,5 +13,7 @@ fn main() {
     //formatted_print::formatted();
     //debug_print::debug_print();
     //display::display_rust();
-    testcase_list::testcase();
+    //testcase_list::testcase();
+
+    structures::structures();
 }
